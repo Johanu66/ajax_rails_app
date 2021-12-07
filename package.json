@@ -1,0 +1,7 @@
+{
+  "name": "ajax_app",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

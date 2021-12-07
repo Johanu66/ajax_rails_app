@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AjaxApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <span><%= link_to 'Se déconnecter', destroy_session_path, class: "btn btn-primary text-white" %></span>
+    <%= link_to 'Tous les utilisateurs', users_path if logged_in? %>
+    <%= yield %>
+  </body>
+</html>
